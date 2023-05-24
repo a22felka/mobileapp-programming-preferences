@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Shared Preferences</string>
+    <string name="side_name">Ändra Shared Preferences</string>
+    <string name="byt_sida_knapp">Till andra sidan</string>
+    <string name="tillbaka_knapp">Tillbaka</string>
 </resources>
