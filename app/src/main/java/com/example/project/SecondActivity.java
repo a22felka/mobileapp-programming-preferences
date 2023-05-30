@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.Context;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -21,9 +22,13 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Save data to Shared Preferences
-                SharedPreferences sharedPreferences = getSharedPreferences("shared_preferances", Context.MODE_PRIVATE);
+                SharedPreferences sharedPreferences = getSharedPreferences("my_preferances", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("struffies", "future_data_value");
+
+                EditText editText = findViewById(R.id.editText);
+                String inputValue = editText.getText().toString();
+
+                editor.putString("inputKey", "inputValue");
                 editor.apply();
 
                 finish();
