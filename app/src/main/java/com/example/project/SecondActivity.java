@@ -22,13 +22,13 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Save data to Shared Preferences
-                SharedPreferences sharedPreferences = getSharedPreferences("my_preferances", Context.MODE_PRIVATE);
+                SharedPreferences sharedPreferences = getSharedPreferences("my_preferences", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
 
                 EditText editText = findViewById(R.id.editText);
                 String inputValue = editText.getText().toString();
 
-                editor.putString("inputKey", "inputValue");
+                editor.putString("inputKey", inputValue);
                 editor.apply();
 
                 finish();

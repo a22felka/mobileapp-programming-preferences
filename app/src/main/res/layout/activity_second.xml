@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="@string/tillbaka_knapp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Skriv Inmatning"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
